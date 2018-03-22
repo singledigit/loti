@@ -44,8 +44,7 @@ function clearDist() {
 const build = gulp.series(
   clearDist,
   configureEnvironment,
-  buildWebpack,
-  prepareFontAwesome
+  buildWebpack
 );
 
 export {

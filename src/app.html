@@ -1,3 +1,28 @@
 <template>
-  <h1>${message}</h1>
+  <require from="./app.scss"></require>
+
+
+  <img src="../static/logo_large.svg" class="logo logo-left is-hidden-desktop">
+  <img src="../static/logo_large.svg" class="logo logo-right is-hidden-touch">
+  <img src="../static/lady.png" class="lady is-hidden-touch">
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <div class="navbar-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a repeat.for="row of router.navigation" class="navbar-item ${row.isActive ? 'is-active' : ''}" href.bind="row.href">${row.title}</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section class="section">
+      <router-view></router-view>
+    </section>
+  </div>
 </template>

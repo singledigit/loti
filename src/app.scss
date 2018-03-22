@@ -1,0 +1,73 @@
+@import '../node_modules/bulma/sass/utilities/initial-variables.sass';
+@import '../node_modules/bulma/sass/utilities/functions.sass';
+// Variables here.
+@import './variables.scss';
+// Color variables to color map
+@import '../node_modules/bulma/sass/utilities/derived-variables.sass';
+// Rest of bulma
+@import '../node_modules/bulma/bulma';
+// Global Settings
+.logo {
+    position: absolute;
+    height: 100px;
+    z-index: 100;
+    &.logo-left {
+        left: 1rem;
+    }
+    &.logo-right {
+        right: 2rem;
+    }
+}
+
+.lady {
+    position: absolute;
+    z-index: 100;
+    left: -2rem;
+    top: 2.5rem;
+}
+
+@media(min-width:1024px) {
+    .container {
+        max-width: 840px;
+        margin: 0 0 0 auto;
+    }
+}
+
+@media(min-width:1124px) {
+    .container {
+        max-width: 940px;
+    }
+}
+
+@media(min-width:1224px) {
+    .container {
+        max-width: 1040px;
+    }
+}
+
+@media(min-width:1224px) {
+    .container {
+        max-width: 1040px;
+        margin: 0 0 0 auto;
+    }
+}
+
+@media(min-width:1224px) {
+    .container {
+        max-width: 1040px;
+        margin: 0 0 0 auto;
+    }
+}
+
+@media(min-width:1388px) {
+    .container {
+        max-width: 1040px;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:1440px) {
+    .container {
+        max-width: 1100px;
+    }
+}
