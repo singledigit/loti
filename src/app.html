@@ -1,11 +1,9 @@
 <template>
   <require from="./app.scss"></require>
-
-
-  <img src="../static/logo_large.svg" class="logo logo-left is-hidden-desktop">
-  <img src="../static/logo_large.svg" class="logo logo-right is-hidden-touch">
   <img src="../static/lady.png" class="lady is-hidden-touch">
-  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
+    <img src="../static/logo_large.svg" class="logo logo-left is-hidden-desktop">
+    <img src="../static/logo_large.svg" class="logo logo-right is-hidden-touch">
     <div class="navbar-brand">
       <div class="navbar-burger">
         <span></span>
@@ -25,4 +23,25 @@
       <router-view></router-view>
     </section>
   </div>
+
+  <nav class="navbar is-light is-fixed-bottom">
+    <div class="navbar-brand">
+      <div class="navbar-item has-text-weight-bold">
+        Ranelle Williams
+      </div>
+      <a href="tel:303-684-8074" class="navbar-item has-text-weight-bold is-hidden-desktop">
+        303-684-8074
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item is-size-7">
+          CLD, CD (DONA), CM, CSAM - Doula, Midwife Assistant, Massage Therapist.
+        </div>
+        <a href="tel:303-684-8074" class="navbar-item has-text-weight-bold">
+          303-684-8074
+        </a>
+      </div>
+    </div>
+  </nav>
 </template>
